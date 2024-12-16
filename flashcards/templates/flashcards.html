@@ -1,0 +1,225 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Flashcards</title>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+            justify-content: center;
+            height: 100vh;
+            margin: 0;
+            background: hsl(234, 65%, 81%);
+    
+
+        }
+
+        .card-container {
+            perspective: 1000px;
+            margin: 20px;
+        }
+
+        .card {
+            width: 600px;
+            height: 400px;
+            position: relative;
+            transform-style: preserve-3d;
+            transition: transform 0.6s;
+            box-shadow: 0 1rem 2rem hsl(0 0% 0% / 20%);
+             
+            cursor: pointer;
+            
+        }
+
+        .card.flipped {
+            transform: rotateY(180deg);
+        }
+
+        .card-side {
+            width: 100%;
+            height: 100%;
+            position: absolute;
+            backface-visibility: hidden;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            font-size: 20px;
+            border: 1px solid #ccc;
+            border-radius: 10px;
+            padding: 10px;
+            text-align: center;
+        }
+
+        .card-side p {
+            color: white;
+        }
+
+        .front {
+            /* background-color: #f0f8ff; */
+            background: #7989ed;
+            color: white;
+            
+        }
+
+        .back {
+            background-color: #ffebcd;
+            transform: rotateY(180deg);
+        }
+
+        .buttons {
+            display: flex;
+            gap: 10px;
+            margin-top: 20px;
+        }
+
+        button {
+            padding: 10px 20px;
+            font-size: 18px;
+            font-weight: lighter bold;
+            border: none;
+            border-radius: 5px;
+            cursor: pointer;
+            /* background: hsl(0, 0%, 85%);
+            back */
+            background-color: #ffebcd;
+            color: #7989ed;
+            border: 2px solid #7989ed;
+
+        }
+
+        button:hover {
+            background-color: #7989ed;
+            /* border-color: #7989ed; */
+
+        }
+
+        
+        button:hover {
+            background-color: #7989ed;
+            /* border-color: #7989ed; */
+            color: white;
+
+        }
+
+        button:disabled {
+            background-color: #7989ed;
+            cursor: not-allowed;
+        }
+/* 
+        tton {
+    width: 100%;
+    padding: 16px 0;
+    /* margin: 25px; */
+    /* border: none;
+    text-transform: uppercase;
+    border-radius: 30px;
+    outline: none;
+    font-weight: 800;
+    letter-spacing: 3px;
+    background: #7989ed;
+    color: #ffebcd;
+    cursor: pointer;
+    /* box-shadow: 0px 10px 40px -12px #00ff8052; */
+    /* border: 2px solid #7989ed;
+    font-family: 'Manrope', 'Roboto';
+    font-size: 15px;
+} */
+
+
+    </style>
+</head>
+<body>
+    <h1>Flashcards</h1>
+
+    <div class="card-container">
+        <div class="card" id="flashcard">
+            <div class="card-side front" id="front-text"><p>Question 1: What is the capital of France?</p></div>
+            <div class="card-side back" id="back-text">Answer: Paris</div>
+        </div>
+    </div>
+
+    <div class="buttons">
+        <button id="prev-btn">Previous</button>
+        <button id="flip-btn">Flip Card</button>
+        <button id="next-btn">Next</button>
+    </div>
+
+    <script>
+        let flashcards 
+        
+        // = [
+        //     { question: "Genomics", answer: "Data accumulated by human genome sequencing will allow healthcare providers to customize treatments for patients with precision medicine and conduct genetic testing       to      confirm diagnostics. Sequencing the genomes of pathogens will also enable researchers to gain new knowledge about the mechanisms of disease, and may lead to the creation of better therapeutics (Norquist and Swisher 2015, Ostrov et al. 2019).Massive amounts of sequencing data have permitted increased understanding of the molecular determinants of pathogenesis, that is, the manner of development of a disease" },
+        //     { question: "DNA Sequencing", answer: "2020; Goes de Jesus 2020; Meredith et al. 2020, Zhang and Holmes 2020).The process of DNA sequencing is continually evolving. Current widespread methods that were developed in the 2010s       under   the     heading ‘third  generation      sequencing’ relied on the convergence of microfabrication, high-resolution imaging and advances in computational power (Giani et al. 2020). Single molecules of DNA were directly sequenced without an amplification  step. Over      time,   this    approach        led to longer segments being analysed in a single run." },
+        //     { question: "Biosecurity", answer:  "However, this information could also be exploited for the generation of powerful new strains of viruses, with increased transmissibility and virulence (National Academies 2015). In the area of human genetics, there is great concern that exploitation of population sequence analysis could even conceivably lead to the malicious     targeting       of      specific        populations     or individuals with biological weapons (Khoury, Iademarco, and Riley 2016).Gene and genome modiﬁcationVast improvements in sequencing technologies have been accompanied by more precise tools and methods to modify genes.",
+        // },
+        // ];
+
+
+        // #new function to fetch   flashcards from the server
+        async function fetchFlashcards() {
+            try {
+                const response = await fetch('/generate_flashcard');
+                if (!response.ok) {
+                    throw new Error('Network response was not ok');
+                }
+                const data = await response.json();
+                console.log(data);
+                return data;
+            } catch (error) {
+                console.error('There was a problem with the fetch operation:', error);
+            }
+        }
+
+        fetchFlashcards().then(data => {
+            if (data) {
+                flashcards.push(...data);
+                updateCard();
+            }
+        });
+      
+        let currentIndex = 0;
+        const card = document.getElementById('flashcard');
+        const frontText = document.getElementById('front-text');
+        const backText = document.getElementById('back-text');
+        const prevBtn = document.getElementById('prev-btn');
+        const nextBtn = document.getElementById('next-btn');
+        const flipBtn = document.getElementById('flip-btn');
+
+        function updateCard() {
+            const currentFlashcard = flashcards[currentIndex];
+            // frontText.textContent = `${currentIndex + 1}: ${currentFlashcard.question}`;
+            
+            frontText.textContent = `${currentIndex + 1}: ${currentFlashcard["Text chunk"]}`;
+            backText.textContent = `${currentFlashcard.Topic}`;
+            card.classList.remove('flipped');
+        }
+
+        prevBtn.addEventListener('click', () => {
+            currentIndex = (currentIndex - 1 + flashcards.length) % flashcards.length;
+            updateCard();
+        });
+
+        nextBtn.addEventListener('click', () => {
+            currentIndex = (currentIndex + 1) % flashcards.length;
+            updateCard();
+        });
+
+        flipBtn.addEventListener('click', () => {
+            card.classList.toggle('flipped');
+        });
+
+        card.addEventListener('click', () => {
+            card.classList.toggle('flipped');
+        });
+
+        // Initialize the first card
+        updateCard();
+    </script>
+</body>
+</html>
+
+

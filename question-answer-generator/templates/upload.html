@@ -1,0 +1,169 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="/static/css/styles.css">
+    <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@400;700&display=swap" rel="stylesheet">
+    <link href='https://fonts.googleapis.com/css?family=Manrope' rel='stylesheet'>
+
+
+    <title>Create Test</title>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            text-align: center;
+            margin: 0;
+            padding: 0;
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+            justify-content: center;
+            height: 100vh;
+            background-color: #9ea6f9;
+            font-family: 'Roboto', sans-serif;
+            
+        }   
+        h1 {
+            color: #333;
+            font-size: 20   px;
+            font-weight: 700;
+            letter-spacing: 2px;
+            padding-bottom: 20px;
+            margin-top: 0px;
+            font-family: 'Manrope', 'Roboto';
+        }
+        form {
+            background: #ffebcd;
+            padding: 70px;
+            border-radius: 20px;
+            display: inline-block;
+            -webkit-box-shadow: 0px 3px 16px -6px rgba(0,0,0,0.75); 
+            -moz-box-shadow: 0px 3px 16px -6px rgba(0,0,0,0.75);
+            box-shadow: 0px 3px 16px -6px rgba(0,0,0,0.75);
+            margin-bottom: 15px;
+            margin-top: 5px;
+        }
+
+
+        input, select {
+            margin-top: 5px;
+            margin-bottom: 25px;
+            padding: 8px;
+            width: 100%;
+            box-sizing: border-box;
+        }
+        /* button {
+            background-color: #007BFF;
+            color: #fff;
+            border: none;
+            padding: 10px 20px;
+            border-radius: 5px;
+            cursor: pointer;
+        } */
+        button:hover {  
+            background-color: #7989ed;
+            color: white;
+
+
+        
+        }
+
+        button {
+
+        width: 100%;
+        padding: 16px 0;
+        /* margin: 25px; */
+        border: none;
+        text-transform: uppercase;
+        border-radius: 30px;
+        outline: none;
+        font-weight: 800;
+        letter-spacing: 3px;
+        background: #7989ed;
+        color: #ffebcd;
+        cursor: pointer;
+        /* box-shadow: 0px 10px 40px -12px #00ff8052; */
+        border: 2px solid #7989ed;
+        font-family: 'Manrope', 'Roboto';
+        font-size: 15px;
+        }
+
+    input {
+        border: none;
+        border-radius: 12px;
+    }
+
+    select {
+        border: none;
+        background-color: #ffffff;
+        border-radius: 12px;
+    }
+    label {
+        display: block;
+        text-align: left;
+        margin-bottom: 5px;
+        font-weight: bold;
+    }
+
+    input, select {
+        text-align: left;
+    }
+
+    pdf-button {
+        color: blue
+    }
+
+
+
+
+
+    
+    </style>
+</head>
+<body>
+
+    <form action="/generate_test" method="post" enctype="multipart/form-data">
+        <h1>EXAM CREATOR</h1>
+        <label for="test_name">Test Name</label>
+        <input type="text" id="test_name" name="test_name" required>
+ 
+        
+ 
+        <label for="test_type">Test Type</label>
+        <select id="test_type" name="test_type" required>
+            <option value="Multiple Choie Question">MCQ</option>
+            <option value="Descriptive">Descriptive</option>
+            <option value="True/False">True/False</option>
+        </select>
+
+
+        <label for="test_level">Test Level</label>
+        <select id="test_level" name="test_level" required>
+            <option value="Easy">Easy</option>
+            <option value="Medium">Medium</option>
+            <option value="Hard">Hard</option>
+        </select>
+
+
+        <label for="num_questions">Number of Questions</label>
+        <input type="number" id="num_questions" name="num_questions" min="1" required>
+
+        <label for="file" >Upload PDF</label>
+        <input type="file" id="file" class="pdf-button" name="file" accept="application/pdf" required>
+        
+
+        <br><br>
+        <button class="btn-login" href="/generate_test" type="submit">Generate Test</button>
+
+        <script>
+            // JavaScript to handle the click event
+            document.getElementById("btn-login").addEventListener("click", function () {
+                const newLine = document.createElement("p");
+                newLine.textContent = "This is the new line added after clicking the CTA.";
+                document.getElementById("content").appendChild(newLine);
+            });
+        </script>
+    </form>
+</body>
+</html> 

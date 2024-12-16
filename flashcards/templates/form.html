@@ -1,0 +1,178 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link href='https://unpkg.com/boxicons@2.1.4/css/boxicons.min.css' rel='stylesheet'>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Manrope:wght@200..800&display=swap" rel="stylesheet">
+
+    <title>Generate flahcards</title>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            margin: 0;
+            padding: 0;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            height: 100vh;
+            background-color: #ffebcd;
+            flex-direction: column ;
+            font-family: Manrope;
+        }
+
+        .h1 {
+            font-size: 2rem;
+            margin-bottom: 20px;
+            /* color: ; */
+        }
+        .container {
+            /* background-color: #fff; */
+            /* padding: 20px; */
+            border-radius: 8px;
+            box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+        }
+        .form-group {
+            margin-bottom: 15px;
+        }
+        .form-group label {
+            display: block;
+            margin-bottom: 5px;
+        }
+        .form-group input {
+            width: 100%;
+            padding: 8px;
+            box-sizing: border-box;
+        }
+        .cta-button {
+            display: inline-block;
+            padding: 20px 100px 20px 100px;
+            background-color: #7a87ed;
+            color: #ffebcd;
+            text-align: center;
+            border: none;
+            border-radius: 30px;
+            cursor: pointer;
+            text-decoration: none;
+            letter-spacing: 3px;
+            font-size: 15px;
+            font-weight: 500;
+            /* border-radius: 12; */
+
+        }
+        .cta-button:hover {
+            color: #fff;
+
+        }
+        .file-input {
+            display: none;
+        }
+
+        /* Style the custom button */
+        .custom-upload-btn {
+            display: inline-block;
+            padding: 10px 20px;
+            font-size: 16px;
+            color: black;
+            background-color: #ffebcd;
+            border: none;
+            border-radius: 5px;
+            cursor: pointer;
+            text-align: center;
+            padding:  100px 400px 100px 400px;
+            border-radius: 20px;
+            border: 3px dotted;
+            border-color: #7a87ed
+                
+        }
+/* 
+        .pdf-selection-text {
+            display: flex;
+            flex-direction: column;
+
+        } */
+
+        .custom-upload-btn:hover {
+            background-color: #9ea6f9   ;
+            border-color: #ffffff;
+            color: white;
+
+        }
+        
+        .generate-cta {
+            display: flex;
+            padding-top: 30px;
+
+        }
+
+        .upload-icon {
+
+            padding: 15px;
+        }
+    </style>
+</head>
+<body>
+    <h1>Generate Flashcards</h1>
+    <div class="container">
+        <form  action="/upload" method="POST" enctype="multipart/form-data">
+            <!-- <div class="form-group">
+                <label for="name">Name:</label> 
+                <input type="text" id="name" name="name">
+            </div> -->
+            <input type="file" id="fileInput" class="file-input" accept=".pdf" onchange="handleFileUpload(event)" name="pdf" accept="application/pdf" required>
+
+            <!-- Custom button -->
+
+            <label for="fileInput" class="custom-upload-btn" id="pdf-selection-text"> 
+            <div class="upload-icon">   
+                <i class='bx bx-upload'></i>
+            </div>
+
+                 Upload your PDF
+            </label>
+    
+        <!-- </form> -->
+    </div>
+
+    <!-- <form action="{{ url_for('upload') }}" method="POST"> -->
+
+    <div class="generate-cta">
+        
+        <button type="submit" class="cta-button">GENERATE FLASHCARDS</button>
+
+
+        </form>
+    <p id="fileName"></p>
+
+
+    <script>
+        // Add an event listener to display the selected file name
+        // const fileInput = document.getElementById('fileInput');
+        // const fileName = document.getElementById('fileName');
+
+        // fileInput.addEventListener('change', function() {
+        //     if (fileInput.files.length > 0) {
+        //         fileName.textContent = `Selected file: ${fileInput.files[0].name}`;
+        //     }
+        // });
+
+        function handleFileUpload(event) {
+            const uploadedFile = event.target.files[0];
+            const displayElement = document.getElementById('pdf-selection-text');
+            
+            if (uploadedFile && uploadedFile.type === "application/pdf") {
+                // Add a tag to highlight the file name
+                displayElement.innerHTML = `File Uploaded: <strong>${uploadedFile.name}</strong>`;
+            } else if (uploadedFile) {
+                displayElement.innerHTML = `<span style="color: red;">Invalid file type. Please upload a PDF.</span>`;
+            } else {
+                displayElement.innerHTML = 'No file uploaded yet.';
+            }
+        }
+
+
+    </script>
+</body>
+</html>
