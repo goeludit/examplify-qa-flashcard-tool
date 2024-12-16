@@ -1,0 +1,796 @@
+#,Question,Options,Answer,Prompt
+1,Economics is a science which deals with _________.,"a. matters and substance
+b. chemicals and reactions
+c. human wants and resources
+d. numbers and combinations",C,"###Instruction: 
+Provide the background knowledge in a brief paragraph required for answering the multiple choice
+question in the input which has only one answer given in response.
+
+###Input
+Question: Economics is a science which deals with _________.a. matters and substance
+b. chemicals and reactions
+c. human wants and resources
+d. numbers and combinations
+
+###Response
+Answer: C"
+2,Microeconomics deals with the study of __________ economic entities.,"a. Aggregate
+b. Individual
+c. Macro
+d. Socio",B,"###Instruction: 
+Provide the background knowledge in a brief paragraph required for answering the multiple choice
+question in the input which has only one answer given in response.
+
+###Input
+Question: Microeconomics deals with the study of __________ economic entities.a. Aggregate
+b. Individual
+c. Macro
+d. Socio
+
+###Response
+Answer: B"
+3,Macroeconomics deals with _________ economic entities.,"a. Aggregate
+b. Individual
+c. Micro
+d. Socio",A,"###Instruction: 
+Provide the background knowledge in a brief paragraph required for answering the multiple choice
+question in the input which has only one answer given in response.
+
+###Input
+Question: Macroeconomics deals with _________ economic entities.a. Aggregate
+b. Individual
+c. Micro
+d. Socio
+
+###Response
+Answer: A"
+4,_________ is an example of Microeconomic theory.,"a. Theory of Consumption
+b. Theory of Economic Growth
+c. Theory of Money
+d. Theory of Income, Employment and Output",A,"###Instruction: 
+Provide the background knowledge in a brief paragraph required for answering the multiple choice
+question in the input which has only one answer given in response.
+
+###Input
+Question: _________ is an example of Microeconomic theory.a. Theory of Consumption
+b. Theory of Economic Growth
+c. Theory of Money
+d. Theory of Income, Employment and Output
+
+###Response
+Answer: A"
+5,___________ is an example of Macroeconomic theory.,"a. Theory of Production
+b. Theory of Rent
+c. General Theory
+d. Theory of Profit",C,"###Instruction: 
+Provide the background knowledge in a brief paragraph required for answering the multiple choice
+question in the input which has only one answer given in response.
+
+###Input
+Question: ___________ is an example of Macroeconomic theory.a. Theory of Production
+b. Theory of Rent
+c. General Theory
+d. Theory of Profit
+
+###Response
+Answer: C"
+6,Opportunity costs are ________ measured in monetary terms.,"a. Always
+b. Can be
+c. Not
+d. Never",B,"###Instruction: 
+Provide the background knowledge in a brief paragraph required for answering the multiple choice
+question in the input which has only one answer given in response.
+
+###Input
+Question: Opportunity costs are ________ measured in monetary terms.a. Always
+b. Can be
+c. Not
+d. Never
+
+###Response
+Answer: B"
+7,An exogenous variable exists ______ the economic model.,"a. Within
+b. Outside
+c. Inside
+d. In none of",B,"###Instruction: 
+Provide the background knowledge in a brief paragraph required for answering the multiple choice
+question in the input which has only one answer given in response.
+
+###Input
+Question: An exogenous variable exists ______ the economic model.a. Within
+b. Outside
+c. Inside
+d. In none of
+
+###Response
+Answer: B"
+8,________ express functional relationship between two or more variables.,"a. Functions
+b. Combinations
+c. Programs
+d. Limits",A,"###Instruction: 
+Provide the background knowledge in a brief paragraph required for answering the multiple choice
+question in the input which has only one answer given in response.
+
+###Input
+Question: ________ express functional relationship between two or more variables.a. Functions
+b. Combinations
+c. Programs
+d. Limits
+
+###Response
+Answer: A"
+9,Slope of straight line is _________ at all points.,"a. Different
+b. Rising
+c. Falling
+d. Same",D,"###Instruction: 
+Provide the background knowledge in a brief paragraph required for answering the multiple choice
+question in the input which has only one answer given in response.
+
+###Input
+Question: Slope of straight line is _________ at all points.a. Different
+b. Rising
+c. Falling
+d. Same
+
+###Response
+Answer: D"
+10,Graph is a _________ tool used to show the relationship between the variables.,"a. Physical
+b. Economic
+c. Social
+d. Geometrical",D,"###Instruction: 
+Provide the background knowledge in a brief paragraph required for answering the multiple choice
+question in the input which has only one answer given in response.
+
+###Input
+Question: Graph is a _________ tool used to show the relationship between the variables.a. Physical
+b. Economic
+c. Social
+d. Geometrical
+
+###Response
+Answer: D"
+11,_________ shows the rate at which a variable changes.,"a. Slope
+b. Equation
+c. Function
+d. Data",A,"###Instruction: 
+Provide the background knowledge in a brief paragraph required for answering the multiple choice
+question in the input which has only one answer given in response.
+
+###Input
+Question: _________ shows the rate at which a variable changes.a. Slope
+b. Equation
+c. Function
+d. Data
+
+###Response
+Answer: A"
+12,Positive Economics is based on ________ _.,"a. Value judgement
+b. Ethics
+c. Facts
+d. Public opinion",C,"###Instruction: 
+Provide the background knowledge in a brief paragraph required for answering the multiple choice
+question in the input which has only one answer given in response.
+
+###Input
+Question: Positive Economics is based on ________ _.a. Value judgement
+b. Ethics
+c. Facts
+d. Public opinion
+
+###Response
+Answer: C"
+13,Normative Economics is based on __________.,"a. Moral values
+b. Facts
+c. Numbers
+d. Diagrams",A,"###Instruction: 
+Provide the background knowledge in a brief paragraph required for answering the multiple choice
+question in the input which has only one answer given in response.
+
+###Input
+Question: Normative Economics is based on __________.a. Moral values
+b. Facts
+c. Numbers
+d. Diagrams
+
+###Response
+Answer: A"
+14,Sociology is an example of ________ science.,"a. Positive
+b. Pure
+c. Normative
+d. Hypothetical",C,"###Instruction: 
+Provide the background knowledge in a brief paragraph required for answering the multiple choice
+question in the input which has only one answer given in response.
+
+###Input
+Question: Sociology is an example of ________ science.a. Positive
+b. Pure
+c. Normative
+d. Hypothetical
+
+###Response
+Answer: C"
+15,Physics is an example of __________ science.,"a. Positive
+b. Normative
+c. Fiscal
+d. Monetary",A,"###Instruction: 
+Provide the background knowledge in a brief paragraph required for answering the multiple choice
+question in the input which has only one answer given in response.
+
+###Input
+Question: Physics is an example of __________ science.a. Positive
+b. Normative
+c. Fiscal
+d. Monetary
+
+###Response
+Answer: A"
+16,__________ plays an important role in the market economy.,"a. Government
+b. Price mechanism
+c. Public sector enterprise
+d. Non-government Organization",B,"###Instruction: 
+Provide the background knowledge in a brief paragraph required for answering the multiple choice
+question in the input which has only one answer given in response.
+
+###Input
+Question: __________ plays an important role in the market economy.a. Government
+b. Price mechanism
+c. Public sector enterprise
+d. Non-government Organization
+
+###Response
+Answer: B"
+17,An equation specifies the relationship between the ________ variables.,"a. Positive and normative
+b. Fiscal and monetary
+c. Dependent and independent
+d. Endogenous and exogenous",C,"###Instruction: 
+Provide the background knowledge in a brief paragraph required for answering the multiple choice
+question in the input which has only one answer given in response.
+
+###Input
+Question: An equation specifies the relationship between the ________ variables.a. Positive and normative
+b. Fiscal and monetary
+c. Dependent and independent
+d. Endogenous and exogenous
+
+###Response
+Answer: C"
+18,Downward curve or line shows ________ relation between two variables.,"a. Positive
+b. Upward
+c. Inverse
+d. Vertical",C,"###Instruction: 
+Provide the background knowledge in a brief paragraph required for answering the multiple choice
+question in the input which has only one answer given in response.
+
+###Input
+Question: Downward curve or line shows ________ relation between two variables.a. Positive
+b. Upward
+c. Inverse
+d. Vertical
+
+###Response
+Answer: C"
+19,Upward curve or line shows _______ relation between two variables.,"a. Direct
+b. Indirect
+c. Negative
+d. Horizontal",A,"###Instruction: 
+Provide the background knowledge in a brief paragraph required for answering the multiple choice
+question in the input which has only one answer given in response.
+
+###Input
+Question: Upward curve or line shows _______ relation between two variables.a. Direct
+b. Indirect
+c. Negative
+d. Horizontal
+
+###Response
+Answer: A"
+20,____________ = ∆Y/∆X,"a. Axes
+b. Slope
+c. Intercept
+d. Function",B,"###Instruction: 
+Provide the background knowledge in a brief paragraph required for answering the multiple choice
+question in the input which has only one answer given in response.
+
+###Input
+Question: ____________ = ∆Y/∆Xa. Axes
+b. Slope
+c. Intercept
+d. Function
+
+###Response
+Answer: B"
+21,__________ is the point at which the line or the curve crosses the vertical axis.,"a. Internet
+b. Intercept
+c. Equilibrium
+d. Slope",B,"###Instruction: 
+Provide the background knowledge in a brief paragraph required for answering the multiple choice
+question in the input which has only one answer given in response.
+
+###Input
+Question: __________ is the point at which the line or the curve crosses the vertical axis.a. Internet
+b. Intercept
+c. Equilibrium
+d. Slope
+
+###Response
+Answer: B"
+22,"Variables may be endogenous, which is explained _________ the theory.","a. within
+b. without
+c. outside
+d. never in",A,"###Instruction: 
+Provide the background knowledge in a brief paragraph required for answering the multiple choice
+question in the input which has only one answer given in response.
+
+###Input
+Question: Variables may be endogenous, which is explained _________ the theory.a. within
+b. without
+c. outside
+d. never in
+
+###Response
+Answer: A"
+23,Exogenous variable is that which influences ________.,"a. Externally
+b. Internally
+c. Excessively
+d. Intensively",A,"###Instruction: 
+Provide the background knowledge in a brief paragraph required for answering the multiple choice
+question in the input which has only one answer given in response.
+
+###Input
+Question: Exogenous variable is that which influences ________.a. Externally
+b. Internally
+c. Excessively
+d. Intensively
+
+###Response
+Answer: A"
+24,Economics is a social science which deals with human behavior as a relationship between ________.,"a. Unlimited buyers and limited sellers
+b. Unlimited wants and scarce resources
+c. Unending wants and limited people
+d. Consumption and production",B,"###Instruction: 
+Provide the background knowledge in a brief paragraph required for answering the multiple choice
+question in the input which has only one answer given in response.
+
+###Input
+Question: Economics is a social science which deals with human behavior as a relationship between ________.a. Unlimited buyers and limited sellers
+b. Unlimited wants and scarce resources
+c. Unending wants and limited people
+d. Consumption and production
+
+###Response
+Answer: B"
+25,__________ are mathematical representations of functional relationships.,"a. Graphs
+b. Functions
+c. Equations
+d. Slopes",C,"###Instruction: 
+Provide the background knowledge in a brief paragraph required for answering the multiple choice
+question in the input which has only one answer given in response.
+
+###Input
+Question: __________ are mathematical representations of functional relationships.a. Graphs
+b. Functions
+c. Equations
+d. Slopes
+
+###Response
+Answer: C"
+26,Resources have __________ uses.,"a. Limited
+b. Unlimited
+c. Alternative
+d. Particular",C,"###Instruction: 
+Provide the background knowledge in a brief paragraph required for answering the multiple choice
+question in the input which has only one answer given in response.
+
+###Input
+Question: Resources have __________ uses.a. Limited
+b. Unlimited
+c. Alternative
+d. Particular
+
+###Response
+Answer: C"
+27,The _______ problem refers to which goods and services a society chooses to produce.,"a. What to produce
+b. How to produce
+c. For whom to produce
+d. Full employment of resources",A,"###Instruction: 
+Provide the background knowledge in a brief paragraph required for answering the multiple choice
+question in the input which has only one answer given in response.
+
+###Input
+Question: The _______ problem refers to which goods and services a society chooses to produce.a. What to produce
+b. How to produce
+c. For whom to produce
+d. Full employment of resources
+
+###Response
+Answer: A"
+28,The _________ problem deals with the way in which output is distributed among the members of society.,"a. What to produce
+b. How to produce
+c. For whom to produce
+d. Full employment of resources",C,"###Instruction: 
+Provide the background knowledge in a brief paragraph required for answering the multiple choice
+question in the input which has only one answer given in response.
+
+###Input
+Question: The _________ problem deals with the way in which output is distributed among the members of society.a. What to produce
+b. How to produce
+c. For whom to produce
+d. Full employment of resources
+
+###Response
+Answer: C"
+29,The ___________ problem refers to the way in which resources or inputs are organized to produce the goods and services that consumers want.,"a. What to produce
+b. How to produce
+c. For whom to produce
+d. Full employment of resources",B,"###Instruction: 
+Provide the background knowledge in a brief paragraph required for answering the multiple choice
+question in the input which has only one answer given in response.
+
+###Input
+Question: The ___________ problem refers to the way in which resources or inputs are organized to produce the goods and services that consumers want.a. What to produce
+b. How to produce
+c. For whom to produce
+d. Full employment of resources
+
+###Response
+Answer: B"
+30,The problem of __________ refers to the question of whether all available resources of a society are fully utilized.,"a. What to produce
+b. How to produce
+c. For whom to produce
+d. Full employment of resources",D,"###Instruction: 
+Provide the background knowledge in a brief paragraph required for answering the multiple choice
+question in the input which has only one answer given in response.
+
+###Input
+Question: The problem of __________ refers to the question of whether all available resources of a society are fully utilized.a. What to produce
+b. How to produce
+c. For whom to produce
+d. Full employment of resources
+
+###Response
+Answer: D"
+31,___________ is a universal problem.,"a. Scarcity
+b. Underemployment
+c. Lack of investment
+d. Dissaving",A,"###Instruction: 
+Provide the background knowledge in a brief paragraph required for answering the multiple choice
+question in the input which has only one answer given in response.
+
+###Input
+Question: ___________ is a universal problem.a. Scarcity
+b. Underemployment
+c. Lack of investment
+d. Dissaving
+
+###Response
+Answer: A"
+32,"According to Prof. Mankiw, __________ is the essence of economics.","a. Demand
+b. Supply
+c. Decision making
+d. Price mechanism",C,"###Instruction: 
+Provide the background knowledge in a brief paragraph required for answering the multiple choice
+question in the input which has only one answer given in response.
+
+###Input
+Question: According to Prof. Mankiw, __________ is the essence of economics.a. Demand
+b. Supply
+c. Decision making
+d. Price mechanism
+
+###Response
+Answer: C"
+33,People can face trade-off between __________.,"a. Efficiency and investment
+b. Efficiency and marginalism
+c. Efficiency and equity
+d. Efficiency and production",C,"###Instruction: 
+Provide the background knowledge in a brief paragraph required for answering the multiple choice
+question in the input which has only one answer given in response.
+
+###Input
+Question: People can face trade-off between __________.a. Efficiency and investment
+b. Efficiency and marginalism
+c. Efficiency and equity
+d. Efficiency and production
+
+###Response
+Answer: C"
+34,When an individual has to decide how much to work then he faces trade-off between ________.,"a. Work and leisure
+b. Work and Investment
+c. Work and supply
+d. Work and demand",A,"###Instruction: 
+Provide the background knowledge in a brief paragraph required for answering the multiple choice
+question in the input which has only one answer given in response.
+
+###Input
+Question: When an individual has to decide how much to work then he faces trade-off between ________.a. Work and leisure
+b. Work and Investment
+c. Work and supply
+d. Work and demand
+
+###Response
+Answer: A"
+35,Human wants refer to all goods and services individual _____,"a. Need
+b. Desire
+c. Have
+d. Demand",B,"###Instruction: 
+Provide the background knowledge in a brief paragraph required for answering the multiple choice
+question in the input which has only one answer given in response.
+
+###Input
+Question: Human wants refer to all goods and services individual _____a. Need
+b. Desire
+c. Have
+d. Demand
+
+###Response
+Answer: B"
+36,The most notable incentives in economics is _______,"a. Profit
+b. Price
+c. Revenue
+d. Goodwill",A,"###Instruction: 
+Provide the background knowledge in a brief paragraph required for answering the multiple choice
+question in the input which has only one answer given in response.
+
+###Input
+Question: The most notable incentives in economics is _______a. Profit
+b. Price
+c. Revenue
+d. Goodwill
+
+###Response
+Answer: A"
+37,"Market economy suffers from ______ which are responsible for problems like inflation, unemployment, etc.","a. Imperfection
+b. Lack of resources
+c. Inefficiency
+d. Recession",A,"###Instruction: 
+Provide the background knowledge in a brief paragraph required for answering the multiple choice
+question in the input which has only one answer given in response.
+
+###Input
+Question: Market economy suffers from ______ which are responsible for problems like inflation, unemployment, etc.a. Imperfection
+b. Lack of resources
+c. Inefficiency
+d. Recession
+
+###Response
+Answer: A"
+38,Government can improve economic efficiency by correcting _______.,"a. Market failure
+b. Inflation
+c. Unemployment
+d. BOP deficit",A,"###Instruction: 
+Provide the background knowledge in a brief paragraph required for answering the multiple choice
+question in the input which has only one answer given in response.
+
+###Input
+Question: Government can improve economic efficiency by correcting _______.a. Market failure
+b. Inflation
+c. Unemployment
+d. BOP deficit
+
+###Response
+Answer: A"
+39,_________ cost is the value of the next best alternative or option.,"a. Production
+b. Selling
+c. Opportunity
+d. Total",C,"###Instruction: 
+Provide the background knowledge in a brief paragraph required for answering the multiple choice
+question in the input which has only one answer given in response.
+
+###Input
+Question: _________ cost is the value of the next best alternative or option.a. Production
+b. Selling
+c. Opportunity
+d. Total
+
+###Response
+Answer: C"
+40,People respond to ____________.,"a. Incentives
+b. Consumption
+c. Investment
+d. Saving",A,"###Instruction: 
+Provide the background knowledge in a brief paragraph required for answering the multiple choice
+question in the input which has only one answer given in response.
+
+###Input
+Question: People respond to ____________.a. Incentives
+b. Consumption
+c. Investment
+d. Saving
+
+###Response
+Answer: A"
+41,An _________ is something that induces a person to act.,"a. Investment
+b. Interest
+c. Incentive
+d. Income",C,"###Instruction: 
+Provide the background knowledge in a brief paragraph required for answering the multiple choice
+question in the input which has only one answer given in response.
+
+###Input
+Question: An _________ is something that induces a person to act.a. Investment
+b. Interest
+c. Incentive
+d. Income
+
+###Response
+Answer: C"
+42,________ is an engine of economic growth and development.,"a. Cost
+b. Revenue
+c. Trade
+d. Income",C,"###Instruction: 
+Provide the background knowledge in a brief paragraph required for answering the multiple choice
+question in the input which has only one answer given in response.
+
+###Input
+Question: ________ is an engine of economic growth and development.a. Cost
+b. Revenue
+c. Trade
+d. Income
+
+###Response
+Answer: C"
+43,_________ is a place in which people make exchanges which are governed by prices.,"a. Market
+b. District
+c. Bank
+d. State",A,"###Instruction: 
+Provide the background knowledge in a brief paragraph required for answering the multiple choice
+question in the input which has only one answer given in response.
+
+###Input
+Question: _________ is a place in which people make exchanges which are governed by prices.a. Market
+b. District
+c. Bank
+d. State
+
+###Response
+Answer: A"
+44,Which economist first tried to show how the market system works?,"a. Alfred Marshall
+b. Adam Smith
+c. David Ricardo
+d. Karl Marx",B,"###Instruction: 
+Provide the background knowledge in a brief paragraph required for answering the multiple choice
+question in the input which has only one answer given in response.
+
+###Input
+Question: Which economist first tried to show how the market system works?a. Alfred Marshall
+b. Adam Smith
+c. David Ricardo
+d. Karl Marx
+
+###Response
+Answer: B"
+45,A country’s _________ depends on its ability to produce goods and services.,"a. Demand
+b. Standard of living
+c. Investment
+d. Policy",B,"###Instruction: 
+Provide the background knowledge in a brief paragraph required for answering the multiple choice
+question in the input which has only one answer given in response.
+
+###Input
+Question: A country’s _________ depends on its ability to produce goods and services.a. Demand
+b. Standard of living
+c. Investment
+d. Policy
+
+###Response
+Answer: B"
+46,Inflation is a state where price rises and value of money ______.,"a. Rises
+b. Falls
+c. Remains constant
+d. Becomes zero",B,"###Instruction: 
+Provide the background knowledge in a brief paragraph required for answering the multiple choice
+question in the input which has only one answer given in response.
+
+###Input
+Question: Inflation is a state where price rises and value of money ______.a. Rises
+b. Falls
+c. Remains constant
+d. Becomes zero
+
+###Response
+Answer: B"
+47,"When the Government prints too much money, prices _______","a. Rise
+b. Fall
+c. Remain constant
+d. Become zero",A,"###Instruction: 
+Provide the background knowledge in a brief paragraph required for answering the multiple choice
+question in the input which has only one answer given in response.
+
+###Input
+Question: When the Government prints too much money, prices _______a. Rise
+b. Fall
+c. Remain constant
+d. Become zero
+
+###Response
+Answer: A"
+48,Central bank controls inflation through which policy?,"a. Monetary policy
+b. Trade Policy
+c. Investment Policy
+d. EXIM Policy",A,"###Instruction: 
+Provide the background knowledge in a brief paragraph required for answering the multiple choice
+question in the input which has only one answer given in response.
+
+###Input
+Question: Central bank controls inflation through which policy?a. Monetary policy
+b. Trade Policy
+c. Investment Policy
+d. EXIM Policy
+
+###Response
+Answer: A"
+49,"In the short run, there is _______ relationship between inflation and unemployment.","a. Direct
+b. Inverse
+c. No
+d. Positive",B,"###Instruction: 
+Provide the background knowledge in a brief paragraph required for answering the multiple choice
+question in the input which has only one answer given in response.
+
+###Input
+Question: In the short run, there is _______ relationship between inflation and unemployment.a. Direct
+b. Inverse
+c. No
+d. Positive
+
+###Response
+Answer: B"
+50,The trade-off between Unemployment and inflation is explained with the help of _______ curve.,"a. Ricardian
+b. Phillips
+c. Marshall’s
+d. Edgeworth’s",B,"###Instruction: 
+Provide the background knowledge in a brief paragraph required for answering the multiple choice
+question in the input which has only one answer given in response.
+
+###Input
+Question: The trade-off between Unemployment and inflation is explained with the help of _______ curve.a. Ricardian
+b. Phillips
+c. Marshall’s
+d. Edgeworth’s
+
+###Response
+Answer: B"
+51,"In the short run, the Phillips curve has _______ slope.","a. Negative
+b. Positive
+c. Vertical
+d. Horizontal",A,"###Instruction: 
+Provide the background knowledge in a brief paragraph required for answering the multiple choice
+question in the input which has only one answer given in response.
+
+###Input
+Question: In the short run, the Phillips curve has _______ slope.a. Negative
+b. Positive
+c. Vertical
+d. Horizontal
+
+###Response
+Answer: A"
+52,_________ can improve market outcomes.,"a. Public sector
+b. Private sector
+c. Service sector
+d. Primary sector",A,"###Instruction: 
+Provide the background knowledge in a brief paragraph required for answering the multiple choice
+question in the input which has only one answer given in response.
+
+###Input
+Question: _________ can improve market outcomes.a. Public sector
+b. Private sector
+c. Service sector
+d. Primary sector
+
+###Response
+Answer: A"
+53,________ allows countries to specialize in goods and services.,"a. Production
+b. Investment
+c. Trade
+d. Consumption",C,"###Instruction: 
+Provide the background knowledge in a brief paragraph required for answering the multiple choice
+question in the input which has only one answer given in response.
+
+###Input
+Question: ________ allows countries to specialize in goods and services.a. Production
+b. Investment
+c. Trade
+d. Consumption
+
+###Response
+Answer: C"
