@@ -16,10 +16,7 @@
 
 ✅ **Flashcard Generation**  
    - Automatically creates **flashcards** with key concepts and summaries from the uploaded content.  
-   - Designed to enhance **memory retention and revision**.  
-
-✅ **Retrieval-Augmented Generation (RAG)**  
-   - Uses an **embedding model** (Nomic Embed Text) and **vector search database** (Pinecone) for **context-aware** content generation.  
+   - Designed to enhance **memory retention and revision**.
 
 ✅ **Fine-Tuned AI Model**  
    - Utilizes a **fine-tuned LLaMA 3.2 model**, optimized for **question-answer generation**.  
