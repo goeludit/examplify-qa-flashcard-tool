@@ -60,7 +60,7 @@
 This repository features a fine-tuned LLaMA 3 (3B) model, optimized for generating question-answer pairs across various difficulty levels and question types. The model is based on the quantized version of LLaMA 3 (3B) and has been fine-tuned using Unsloth, leveraging its efficiency for fast and memory-optimized training.
 
 
-1.​ https://huggingface.co/IamCristiano7/llama3.2-1B-SquadV2-mcq-tf-custom\
+1.​ https://huggingface.co/IamCristiano7/llama3.2-1B-SquadV2-mcq-tf-custom  
 2.​ https://huggingface.co/IamCristiano7/llama3.2-1B-SquadV2
 
 
